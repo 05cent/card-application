@@ -1,0 +1,17 @@
+.Header {
+    border-bottom: 1px solid black;
+}
+
+.btn {
+    background-color: transparent;
+    margin: 10px;
+    padding: 3px;
+    font-size: 20px;
+    border: 2px solid #033cad;
+}
+
+.btn:hover {
+    background-color: blue;
+    color: white;
+    transition: 0.4s;
+}

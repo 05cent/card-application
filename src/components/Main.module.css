@@ -1,0 +1,30 @@
+.Main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: calc(100% - 100px);
+    overflow-y: auto;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 12px;
+    margin: 20px;
+    width: 300px;
+    height: 150px;
+    cursor: pointer;
+    position: relative;
+}
+
+.clearIcon {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+.clearIcon:hover {
+    color: #be0000;
+}

@@ -1,0 +1,4 @@
+export { default as Main } from "./Main";
+export { default as Instructions } from "./Instructions";
+export { default as Footer } from "./Footer";
+export { default as Header } from "./Header";
