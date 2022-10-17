@@ -7,6 +7,7 @@
 }
 
 .card {
+    background-color: rgb(83, 95, 121);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,12 +18,15 @@
     height: 150px;
     cursor: pointer;
     position: relative;
+    color: #eaeaea;
+    font-size: 3em;
 }
 
 .clearIcon {
     position: absolute;
     top: 2px;
     right: 5px;
+    font-size: 20px;
 }
 
 .clearIcon:hover {

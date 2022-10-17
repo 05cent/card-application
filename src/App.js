@@ -30,10 +30,15 @@ function App() {
         sessionStorage.setItem("cards", JSON.stringify(newCards));
     };
     
+    const clearCards = () => {
+        setCards([]);
+        sessionStorage.clear();
+    };
+    
     return (
         <div className={classes.App}>
             <div className={classes.container}>
-                <Header onCreateCard={createCard} onSortCards={sortCards} />
+                <Header onCreateCard={createCard} onSortCards={sortCards} onClearCards={clearCards} />
                 <Main cards={cards} onDeleteCard={deleteCard} />
                 <Footer />
             </div>

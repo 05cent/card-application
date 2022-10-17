@@ -1,17 +1,39 @@
 .Header {
     border-bottom: 1px solid black;
+    height: 60px;
 }
 
-.btn {
-    background-color: transparent;
-    margin: 10px;
-    padding: 3px;
+button {
+    color: #ffffff;
+    margin: 8px;
+    padding: 10px;
     font-size: 20px;
-    border: 2px solid #033cad;
+    border-radius: 5px;
+    border: none;
+    transition: 0.3s;
 }
 
-.btn:hover {
-    background-color: blue;
-    color: white;
-    transition: 0.4s;
+.btnAdd {
+    background-color: #1ac771;
+}
+
+.btnSort {
+    background-color: #8b83a8;
+}
+
+.btnAdd:hover {
+    background-color: #0e9a54;
+}
+
+.btnSort:hover {
+    background-color: #685e8f;
+}
+
+
+.btnClear {
+    background-color: rgb(231, 20, 20);
+}
+
+.btnClear:hover {
+    background-color: #cc0303;
 }
