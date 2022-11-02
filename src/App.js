@@ -8,7 +8,8 @@ function App() {
     const [cards, setCards] = useState([]);
     
     useEffect(() => {
-        const storageCards = sessionStorage.getItem("cards");
+        const storageCards = sessionStorage.
+        getItem("cards");
         if (storageCards)
             setCards(JSON.parse(storageCards));
     }, []);
