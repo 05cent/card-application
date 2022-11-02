@@ -1,0 +1,45 @@
+.ticktacktoe {
+    height: 90%;
+    width: 50%;
+    background-color: rgb(83, 95, 121);
+    text-align: center;
+    padding-left: 20px;
+    color: #fdd346;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.btn {
+    background: none;
+    cursor: pointer;
+    font-size: 6em;
+    transition: 100ms;
+    padding-bottom: 20px;
+}
+
+.gamers {
+    font-size: 2.8em;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.reset {
+    position: absolute;
+    background: none;
+    right: 0;
+    top: 0;
+    color: #da0303;
+    cursor: pointer;
+}
+
+.reset:hover {
+    color: #ff0000;
+}
+
+.result {
+    color: #9d7a04;
+    font-family: cursive;
+    font-size: 45px;
+}

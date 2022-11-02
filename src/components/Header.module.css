@@ -1,6 +1,8 @@
 .Header {
     border-bottom: 1px solid black;
     height: 60px;
+    display: flex;
+    justify-content: space-between;
 }
 
 button {
@@ -11,6 +13,7 @@ button {
     border-radius: 5px;
     border: none;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .btnAdd {
@@ -29,6 +32,16 @@ button {
     background-color: #685e8f;
 }
 
+.link {
+    font-size: 30px;
+    padding: 12px;
+    text-decoration: none;
+    color: #62549b;
+}
+
+.link:hover {
+    color: #21164f;
+}
 
 .btnClear {
     background-color: rgb(231, 20, 20);

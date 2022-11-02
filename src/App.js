@@ -1,12 +1,16 @@
 import classes from './App.module.css';
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Footer, Header, Instructions, Main } from "./components";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import RockPaperScissors from "./components/RockPaperScissors";
 
 function App() {
     const [cards, setCards] = useState([]);
     
     useEffect(() => {
-        setCards(JSON.parse(sessionStorage.getItem("cards") ?? "[]"));
+        const storageCards = sessionStorage.getItem("cards");
+        if (storageCards)
+            setCards(JSON.parse(storageCards));
     }, []);
     
     const createCard = () => {
@@ -36,14 +40,20 @@ function App() {
     };
     
     return (
-        <div className={classes.App}>
-            <div className={classes.container}>
-                <Header onCreateCard={createCard} onSortCards={sortCards} onClearCards={clearCards} />
-                <Main cards={cards} onDeleteCard={deleteCard} />
-                <Footer />
+        <Router>
+            <div className={classes.App}>
+                <div className={classes.container}>
+                    <Header onCreateCard={createCard} onSortCards={sortCards} onClearCards={clearCards} />
+                    <Routes>
+                        <Route path="/" element={null} />
+                        <Route path="/RockPaperScissors" element={<RockPaperScissors />} />
+                    </Routes>
+                    <Main cards={cards} onDeleteCard={deleteCard} />
+                    <Footer />
+                </div>
+                <Instructions />
             </div>
-            <Instructions />
-        </div>
+        </Router>
     );
 }
 
